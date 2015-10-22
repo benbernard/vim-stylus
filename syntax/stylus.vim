@@ -173,12 +173,15 @@ syn keyword cssVisualProp display position top right bottom left float clear cli
 syn keyword cssVisualProp zoom visibility cursor direction outline resize contained
 syn keyword cssVisualProp opacity contained
 syn match cssVisualProp /z-index/ contained
+syn match cssVisualProp /flex-\(direction\)/ contained
+syn match cssVisualProp /align-\(items\|self\)/ contained
 syn match cssVisualProp /\(overflow-\(style\|[xy]\)\|overflow\)/ contained
 syn keyword cssVisualVal inline block compact contained
 syn match cssVisualVal '\<table\>' contained
 syn match cssVisualVal /\(inline-\(block\|table\)\|list-item\|run-in\)/ contained
 syn match cssVisualVal /table-\(row-group\|header-group\|footer-group\|row\|column-group\|column\|cell\|caption\)/ contained
 syn match cssVisualVal /\<ruby\>-\(base-group\|text-group\|base\|text\)/  contained
+syn match cssVisualVal /\<flex\>-\(start\|end\)/  contained
 syn keyword cssVisualVal static relative absolute fixed contained
 syn keyword cssVisualVal ltr rtl embed bidi-override pre nowrap contained
 syn keyword cssVisualVal crosshair help move pointer progress wait contained
