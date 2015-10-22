@@ -67,12 +67,12 @@ endfunction
 "   if line =~ '^\s*\*'
 "     return cindent(v:lnum)
 "   endif
-" 
+"
 "   let pnum = s:prevnonblanknoncomment(v:lnum - 1)
 "   if pnum == 0
 "     return 0
 "   endif
-" 
+"
 "   return indent(pnum) + s:count_braces(pnum, 1) * &sw
 "         \ - s:count_braces(v:lnum, 0) * &sw
 " endfunction
@@ -117,7 +117,7 @@ function! GetStylusIndent()
 
   " if group !~? 'css.*' && line =~? ')\s*$' " match user functions
   "   return increase
-  if group =~? '\v^%(cssTagName|cssClassName|cssIdentifier|cssSelectorOp|cssSelectorOp2|cssBraces|cssAttributeSelector|cssPseudo|stylusId|stylusClass)$'
+  if group =~? '\v^%(cssTagName|cssClassName|cssIdentifier|cssSelectorOp|cssSelectorOp2|cssBraces|cssAttributeSelector|cssPseudo|stylusId|stylusClass|cssSelector)$'
     return increase
   elseif (group == 'stylusUserFunction') && (indent(lnum) == '0') " mixin definition
     return increase
