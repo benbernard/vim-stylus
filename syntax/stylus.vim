@@ -173,6 +173,7 @@ syn keyword cssVisualProp display position top right bottom left float clear cli
 syn keyword cssVisualProp zoom visibility cursor direction outline resize contained
 syn keyword cssVisualProp opacity contained
 syn match cssVisualProp /z-index/ contained
+syn match cssVisualProp /flex/ contained
 syn match cssVisualProp /flex-\(direction\)/ contained
 syn match cssVisualProp /align-\(items\|self\)/ contained
 syn match cssVisualProp /\(overflow-\(style\|[xy]\)\|overflow\)/ contained
