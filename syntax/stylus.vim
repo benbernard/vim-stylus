@@ -174,7 +174,7 @@ syn keyword cssVisualProp zoom visibility cursor direction outline resize contai
 syn keyword cssVisualProp opacity contained
 syn match cssVisualProp /z-index/ contained
 syn match cssVisualProp /flex/ contained
-syn match cssVisualProp /flex-\(direction\)/ contained
+syn match cssVisualProp /flex-\(direction\|shrink\|grow\)/ contained
 syn match cssVisualProp /align-\(items\|self\)/ contained
 syn match cssVisualProp /\(overflow-\(style\|[xy]\)\|overflow\)/ contained
 syn keyword cssVisualVal inline block compact contained
